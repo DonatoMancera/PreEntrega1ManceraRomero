@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import "bulma/css/bulma.css";
+import Brand from "./img/logo.png";
+import Shop from "./img/shop-cart.png";
+import NavBar from "./components/NavBar";
+import ItemListContainer from "./components/ItemListContainer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar imageBrand={Brand} imagehop={Shop} />
+      <ItemListContainer greeting={'Bienvenidos a mi e-commerce'}/>
     </div>
   );
 }
